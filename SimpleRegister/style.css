@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: #0077b6;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-info {
+    text-align: center;
+    padding: 20px;
+}
+
+li img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.nav-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    background-color: #408eb8;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    padding: 0 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+div {
+    margin: 0;
+}
+
+.content-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(134, 122, 122);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-form {
+    text-align: center;
+    font-size: 30px;
+}
+
+.title {
+    font-weight: 400;
+    margin: 0;
+    font-size: 80px;
+}
+
+.sub-title {
+    font-weight: 400;
+    font-size: 40px;
+    color: gray;
+    margin: 0;
+}
+
+label {
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #423b3b;
+    color: white;
+}
+
+
+@media (max-width: 992px) {
+    .info {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    input,
+    button {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    .info {
+        padding: 20px;
+    }
+
+    .content-form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .sub-title {
+        font-size: 25px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input,
+    button {
+        font-size: 18px;
+    }
+
+    ul li {
+        flex-basis: 100%;
+    }
+
+    ul li a {
+        padding: 12px;
+    }
+}
